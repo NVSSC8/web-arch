@@ -5,8 +5,12 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     return """
-    <h1>Hello from Azure App Service 🚀</h1>
-    <p>Deployment Center GitHub deployment is successful.</p>
+    <html>
+    <body>
+        <h1>Hello from Azure App Service</h1>
+        <p>Deployment successful.</p>
+    </body>
+    </html>
     """
 
 if __name__ == "__main__":
